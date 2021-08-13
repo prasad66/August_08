@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Fira Code";
+        background-color: #fbff088b;
+      }
+      h2 {
+        text-align: center;
+      }
+      pre {
+        background-color: rgba(223, 203, 203, 0.959);
+        max-width: 20%;
+        border-radius: 25px;
+      }
+      div.a {
+        text-indent: 50px;
+      }
+    </style>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <h2>apply() vs call() vs bind() !!!</h2>
+
+    <p></p>
+    <!-- Apply Function -->
+    <h3><u>apply():</u></h3>
+    The apply() method calls a function with a given this value, and arguments
+    provided as an array. <br />
+
+    <h4><u>Syntax</u></h4>
+    object.objectMethod.apply( objectInstance, arrayOfArguments ) <br />
+    <br />
+
+    => objectInstance -> the value for 'this' is passed <br />
+    => arrayOfArguments -> if any input is required, passed here in the form of
+    array
+    <h4><u>Return value</u></h4>
+    <div class="a">
+      The result of calling the function with the specified this value and
+      arguments.
+    </div>
+
+    <br /><br />
+    <!-- Call Function -->
+    <h3><u>call():</u></h3>
+    The apply() method calls a function with a given this value, and arguments
+    provided as individual parameters. <br />
+
+    <h4><u>Syntax</u></h4>
+    object.objectMethod.call( objectInstance, arguments ) <br />
+    <br />
+
+    => objectInstance -> the value for 'this' is passed <br />
+    => arrayOfArguments -> if any input is required, passed here in the form of
+    individual parameters
+    <h4><u>Return value</u></h4>
+    <div class="a">
+      The result of calling the function with the specified this value and
+      arguments.
+    </div>
+    <br />
+    <b><u>Difference between call() and apply() method:</u> </b>The only
+    difference is <b>call()</b> method takes the arguments separated by comma
+    while <b>apply()</b> method takes the array of arguments.
+
+    <br /><br />
+    <!-- Bind Function -->
+
+    <h3><u>bind():</u></h3>
+    Both <b>call()</b> and <b>apply()</b> are one-time use methods—if you call
+    the method with the this context it will have it, but the original function
+    will remain unchanged. Sometimes, you might need to use a method over and
+    over with the this context of another object, and in that case you could use
+    the bind method to create a brand new function with an explicitly bound
+    this. <br />
+    <br />
+    The bind() method creates a new function that, when called, has its this
+    keyword set to the provided value, with a given sequence of arguments
+    preceding any provided when the new function is called. <br />
+
+    <h4><u>Syntax</u></h4>
+    object.objectMethod.bind( objectInstance, arguments ) <br />
+    <br />
+
+    => objectInstance -> the value for 'this' is passed <br />
+    => arrayOfArguments -> if any input is required, passed here in the form of
+    array
+    <h4><u>Return value</u></h4>
+    <div class="a">
+      Bind returns a copy of the function with the supplied this and the
+      arguments.
+    </div>
+
+    <br /><br /><br />
+
+    <!-- </p> -->
+  </body>
+</html>
